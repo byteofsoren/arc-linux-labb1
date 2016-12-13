@@ -1,0 +1,47 @@
+## Commandon vi ska köra ##
+
+#fasit#
+
+. Hur man söker filnamn med find.
+    Sök efter pokemon i katalog strukturen. Det finns 10 pokemon gömda i strukturen visa alla.
+    $ find . -name *.poke
+    $ find . -name *.POKE
+    $ find . -iname *.poke
+
+. Räkna antalet pokemons.
+    $ find . -iname *.poke | wc -l
+
+. Hur man söker efter filer med viss text med grep.
+    $ grep -r arc
+
+. Hur man kopierar rekursivt med cp.
+    Först går vi in i katalogen: genom att cp copy/from
+    $ cp file.txt ../to/.
+
+. Hur man byter namn på filer med mv.
+    Byt namn på filen du just kopierade.
+    $ cd ..
+    $ cd to/
+    $ mv file.txt "gnu defender.txt"
+
+. Hur man tar bort kataloger med rm.
+    Ta bort katalogen vi just har arbetat i.
+    $ cd
+    $ rm arc-linux-labb     #Kommer inte att fungera eftersom den inehåller kataloger.
+    $ rm -R arc-linux-labb
+
+. Hur man skriver python-script i vim.
+    Skriv ett enkel heloworld i vim.
+    $ touch hello.py
+    $ vim hello.py
+
+    -- hello.py --
+    #!/usr/bin/env python
+    print("Hello arosrobotic clubb")
+    -- hello.py --
+
+    :wq
+    chmod +x hello.py
+    ./hello.py
+
+. Hur man använder regex. (Det här får du skriva).
