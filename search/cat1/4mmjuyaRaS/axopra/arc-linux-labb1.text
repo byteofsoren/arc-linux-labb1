@@ -24,12 +24,6 @@
     $ cd to/
     $ mv file.txt "gnu defender.txt"
 
-. Hur man tar bort kataloger med rm.
-    Ta bort katalogen vi just har arbetat i.
-    $ cd
-    $ rm arc-linux-labb     #Kommer inte att fungera eftersom den inehåller kataloger.
-    $ rm -R arc-linux-labb
-
 . Hur man skriver python-script i vim.
     Skriv ett enkel heloworld i vim.
     $ touch hello.py
@@ -43,5 +37,44 @@
     :wq
     chmod +x hello.py
     ./hello.py
+
+. Verifiera datum med hjälp av python och regular expressions.
+    -- datum.py --
+    import re
+
+    datum = '2016-12-24'
+    datum = input('enter date: ')
+    res = re.search('\d{4}-\d{2}-\d{2}', datum)
+
+    if not res:
+        print('false')
+    else:
+        print('true')
+
+
+    -- datum.py---
+
+. Verifiera epost addresser med python och rugular expressiors.
+    där epost addressen måste skickas som ett argument.
+    -- email.py --
+    import re
+	import sys
+
+	email = 'arcsweden@gmail.com'
+	email = sys.argv[1]
+	res = re.search(r"^[A-Za-z0-9\.\+_-]+@[A-Za-z0-9\._-]+\.[a-zA-Z]*$", email)
+
+	if not res:
+		print('false')
+	else:
+		print('true')
+
+    -- email.py --
+
+. Hur man tar bort kataloger med rm.
+    Ta bort katalogen vi just har arbetat i.
+    $ cd
+    $ rm arc-linux-labb     #Kommer inte att fungera eftersom den inehåller kataloger.
+    $ rm -R arc-linux-labb
 
 . Hur man använder regex. (Det här får du skriva).
