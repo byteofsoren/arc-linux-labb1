@@ -1,21 +1,23 @@
 This is a filesystem used for training/testing basic commands in a linux enorviorment
 
 Labbar:
-Del1:
-. Ta reda på hur läge systemet varit igång.
-. Ta reda på namnet på den nuvarande katalogen.
-. Ta reda på hur mycet utrymme din hemkatalog använder.
-. Ta reda på hur mycket ledigt utrymme som finns på systemet.
-. Hur man kopierar rekursivt med cp.
-. Hur man byter namn på filer med mv.
-. Hur listar man alla dolda filer och kataloger.
-. Ta bort gömda filer och kataloger.
-. Hur man söker filnamn med find.
-. Räkna antalet pokemons.
-. Hur man söker efter filer med viss text med grep.
-Del2:
-. Hur man skriver python-script i vim.
-. Verifiera datum med hjälp av python och regular expressions.
-. Verifiera epost addresser med python och rugular expressiors.
-. Hur man tar bort kataloger med rm.
+Del 1: Allmänna kommandon
+. Skriv ut hur länge systemet har varit uppe.
+. Skriv ut sökvägen till den katalog du står i för närvarande.
+. Skriv ut hur många megabytes din hemkatalog använder
+. Skriv ut hur mycket ledigt utrymme som finns på systemet
+. Kopiera katalogen from till to i katalogen copy
+. Byt namn på filen file.txt till gnu defender.txt
+. Lista alla dolda filer och kataloger i denna katalog
+. Radera filen gnu defender.txt
+. Radera katalogen copy
 
+Del 2: Sök
+. Lista alla pokemons som döljer sig i ./search katalogerna (totalt 10st)
+. Skriv ut antalet pokemons du hittat som ett heltal
+. Hitta filen i ./search som innehåller texten arcsweden.se
+
+Del 3: Scripting
+. Skriv i vim ett python program som skriver ut ditt namn.
+. Verifiera ett datum med hjälp av python och regular expressions.
+. Verifiera epost addresser med python och regular expressions.
