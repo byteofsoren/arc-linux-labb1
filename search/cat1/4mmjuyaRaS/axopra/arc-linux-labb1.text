@@ -1,6 +1,40 @@
 ## Commandon vi ska köra ##
 
 #fasit#
+. Ta reda på hur läge systemet varit igång.
+    $ uptime
+
+. Ta reda på namnet på den nuvarande katalogen.
+    $ pwd
+
+. Ta reda på hur mycet utrymme din hemkatalog använder.
+    $ du -hs
+
+. Ta reda på hur mycket ledigt utrymme som finns på systemet.
+    $ df -h
+
+. Hur man kopierar rekursivt med cp.
+    Först går vi in i katalogen: genom att cp copy/from
+    $ cp file.txt ../to/.
+
+. Hur man byter namn på filer med mv.
+    Byt namn på filen du just kopierade.
+    $ cd ..
+    $ cd to/
+    $ mv file.txt "gnu defender.txt"
+
+. Hur listar man alla dolda filer och kataloger.
+    $ ls -a
+    $ ls -la
+
+. Ta bort gömda filer och kataloger.
+    $ rm .hiddenfile*
+    $ rm .hidderdir    # Funkar inte
+    $ rm -r .hiddedir
+    ( Kanske måste köra -f och -rf för dolda filer.)
+
+
+
 
 . Hur man söker filnamn med find.
     Sök efter pokemon i katalog strukturen. Det finns 10 pokemon gömda i strukturen visa alla.
@@ -13,16 +47,6 @@
 
 . Hur man söker efter filer med viss text med grep.
     $ grep -r arc
-
-. Hur man kopierar rekursivt med cp.
-    Först går vi in i katalogen: genom att cp copy/from
-    $ cp file.txt ../to/.
-
-. Hur man byter namn på filer med mv.
-    Byt namn på filen du just kopierade.
-    $ cd ..
-    $ cd to/
-    $ mv file.txt "gnu defender.txt"
 
 . Hur man skriver python-script i vim.
     Skriv ett enkel heloworld i vim.
@@ -77,4 +101,3 @@
     $ rm arc-linux-labb     #Kommer inte att fungera eftersom den inehåller kataloger.
     $ rm -R arc-linux-labb
 
-. Hur man använder regex. (Det här får du skriva).
